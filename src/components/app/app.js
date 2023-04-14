@@ -22,7 +22,6 @@ function App() {
 			</div>
 			<EmployeesList data={data} />
 			<EmployeesAddForm />
-			<div></div>
 		</div>
 	);
 }
