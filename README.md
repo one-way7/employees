@@ -1,6 +1,6 @@
 # About
 
-This project is a CRUD React SPA written to practice with React technologies.
+This project is a CRUD React SPA written on class components for training with React technologies.
 
 ## Available Scripts
 
