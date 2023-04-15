@@ -75,7 +75,7 @@ class App extends Component {
 
 		return (
 			<div className='app'>
-				<AppInfo />
+				<AppInfo numberOfEmployees={data} />
 				<div className='search-panel'>
 					<SearchPanel />
 					<AppFilter />
