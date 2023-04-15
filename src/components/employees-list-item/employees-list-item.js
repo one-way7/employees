@@ -6,8 +6,7 @@ const EmployeesListItem = ({
 	onDelete,
 	increase,
 	rise,
-	onToggleIncrease,
-	onToggleRise,
+	onToggleProp,
 }) => {
 	let classNames = 'list-group-item d-flex justify-content-between';
 	if (increase) classNames += ' increase';
@@ -15,7 +14,11 @@ const EmployeesListItem = ({
 
 	return (
 		<li className={classNames}>
-			<span className='list-group-item-label' onClick={onToggleRise}>
+			<span
+				className='list-group-item-label'
+				data-toggle='rise'
+				onClick={onToggleProp}
+			>
 				{name}
 			</span>
 			<input
@@ -27,7 +30,8 @@ const EmployeesListItem = ({
 				<button
 					type='button'
 					className='btn-cookie btn-sm'
-					onClick={onToggleIncrease}
+					data-toggle='increase'
+					onClick={onToggleProp}
 				>
 					<i className='fas fa-cookie'></i>
 				</button>
